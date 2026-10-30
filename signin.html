@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sign in</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; }
+        .div1 { width: 340px; margin: 150px auto; border: 1px solid; padding: 24px; box-sizing: border-box; }
+        input, button { width: 100%; padding: 10px; box-sizing: border-box; margin-bottom: 14px; }
+        .forgotpass { text-align: right; margin-bottom: 14px; }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <h1>sign in</h1>
+    <form>
+        <label for="id">Username or email</label>
+        <input id="id" placeholder="you@example.com">
 
+        <label for="passw">Password</label>
+        <input id="passw" type="password" placeholder="Your password">
+
+        <div class="forgotpass"><a href="">Forgot password?</a></div>
+
+        <button type="submit">Sign in</button>
+        <button type="button" >Don't have an account? Create one</button>
+    </form>
+</div>
+</body>
+</html>
