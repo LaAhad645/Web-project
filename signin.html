@@ -3,22 +3,70 @@
 <head>
     <meta charset="utf-8">
     <title>Sign in</title>
-
+    <style>
+        body {
+            background-color: #E6F2FF;
+        }
+        .div1 {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #0081FF;
+        }
+        h1 {
+            text-align: center;
+            color: #003B75;
+        }
+        label {
+            display: block;
+            color: #002447;
+        }
+        input {
+            width: 240px;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #5CADFF;
+        }
+        .div2 {
+            text-align: right;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #0052A3;
+        }
+        .button1 {
+            width: 100%;
+            height: 35px;
+            background-color: #0081FF;
+            color: white;
+            border: none;
+        }
+        .button2 {
+            width: 100%;
+            height: 35px;
+            margin-top: 10px;
+            background-color: white;
+            color: #0052A3;
+            border: 1px solid #0081FF;
+        }
+    </style>
 </head>
 <body>
 <div class="div1">
     <h1>sign in</h1>
     <form>
-        <label for="id">Username or email</label>
-        <input id="id" placeholder="you@example.com">
+        <label for="input1">Username or email</label>
+        <input id="input1" placeholder="you@example.com">
 
-        <label for="passw">Password</label>
-        <input id="passw" type="password" placeholder="Your password">
+        <label for="input2">Password</label>
+        <input id="input2" type="password" placeholder="Your password">
 
-        <div class="forgotpass"><a href="">Forgot password?</a></div>
+        <div class="div2"><a href="">Forgot password?</a></div>
 
-        <button type="submit">Sign in</button>
-        <button type="button" >Don't have an account? Create one</button>
+        <button type="submit" class="button1">Sign in</button>
+        <button type="button" class="button2">Don't have an account? Create one</button>
     </form>
 </div>
 </body>
