@@ -4,15 +4,84 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #002447, #0052A3 55%, #0081FF);
+        }
         form {
             width: 300px;
             margin: 150px auto;
             border: 2px solid black;
             padding: 20px;
+            background-color: #E6F2FF;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px ;
         }
         h1 {
             text-align: center;
+            color: #002447;
+            font-family: Arial, sans-serif;
         }
+
+        label {
+            display: block;
+            color: #003B75;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        input.box {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px solid #8AC4FF;
+            border-radius: 4px;
+            background-color: #ffffff;
+            color: #000D1A;
+            font-size: 14px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input.box :hover {
+            border-color: #2E96FF;
+        }
+
+        input.box:focus {
+            outline: none;
+            border-color: #0081FF;
+            box-shadow: 0 0 0 3px #B8DBFF;
+        }
+
+        input.submit {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #2E96FF;
+            color: #E6F2FF;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        input.submit:hover {
+            background-color: #0069D1;
+        }
+
+        input.submit:active {
+            background-color: #003B75;
+        }
+
+        input.submit:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px #B8DBFF;
+        }
+
     </style>
 </head>
 <body>
@@ -20,20 +89,20 @@
     <h1>Sign Up</h1>
     <p>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="SU_name">
+    <input type="text" id="name" name="SU_name" class="box">
     </p>
 
     <p>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="SU_email">
+    <input type="email" id="email" name="SU_email" class="box">
     </p>
 
     <p>
     <label for="password">Password:</label>
-    <input type="password" id="password" name="SU_password">
+    <input type="password" id="password" name="SU_password" class="box">
     </p>
 
-    <input type="submit" value="Sign Up">
+    <input type="submit" value="Sign Up" class="submit">
 </form>
 </body>
 </html>
